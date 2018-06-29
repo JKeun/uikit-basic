@@ -16,11 +16,13 @@
 
     <!-- Navigation -->
     <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
-        <a href="#" class="uk-navbar-brand">The Brand</a>
-        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: { offset: 50 }}">
+        <a href="#" class="uk-navbar-brand uk-visible-large">The Brand</a>
+        <ul class="uk-navbar-nav uk-visible-large" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: { offset: 50 }}">
             <li><a href="#kafka">The Kafka</a></li>
             <li><a href="#lingues">Li Europan lingues</a></li>
         </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+        <a href="#" class="uk-navbar-brand uk-navbar-center uk-hidden-large">The Brand</a>
     </nav>
 
     <!-- Content -->
@@ -64,4 +66,14 @@
         <a href="#" data-uk-smooth-scroll>To Top</a>
     </footer>
     
+    
+    <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-offcanvas">
+                <li><a href="#kafka">The Kafka</a></li>
+                <li><a href="#lingues">Li Europan lingues</a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
