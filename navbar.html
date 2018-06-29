@@ -17,7 +17,7 @@
     <!-- Navigation -->
     <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
         <a href="#" class="uk-navbar-brand">The Brand</a>
-        <ul class="uk-navbar-nav">
+        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: { offset: 50 }}">
             <li><a href="#kafka">The Kafka</a></li>
             <li><a href="#lingues">Li Europan lingues</a></li>
         </ul>
@@ -61,7 +61,7 @@
     </div>
     
     <footer class="uk-text-center uk-margin-large">
-        <a href="#">To Top</a>
+        <a href="#" data-uk-smooth-scroll>To Top</a>
     </footer>
     
 </body>
